@@ -8,6 +8,9 @@ public:
     }
 };
 
+class derivedClass : public baseClass {
+
+};
 int main()
 {
     
