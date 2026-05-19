@@ -13,6 +13,10 @@ public:
         y = b;
     }
 
-
+    void display() // Tampilkan nila
+    {
+        cout << "x == " << x << endl;
+        cout << "y == " << y << endl;
+    }
 };
 
