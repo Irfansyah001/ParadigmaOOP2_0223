@@ -34,4 +34,30 @@ public:
     }
 };
 
+class RekeningSyariah : public RekeningBank
+{
+public:
+    RekeningSyariah(int saldoAwal) : RekeningBank(saldoAwal)
+    {
+    }
+
+    void potongAdmin()
+    {
+        cout << "Rekening Syariah bebas biaya admin" << endl;
+    }
+};
+
+class RekeningKonvensional : public RekeningBank
+{
+public:
+    RekeningKonvensional(int saldoAwal) : RekeningBank(saldoAwal)
+    {
+    }
+
+    void potongAdmin()
+    {
+        saldo = saldo - 15000;
+        cout << "Rekening Konvensional dipotong Rp 15000" << endl;
+    }
+};
 
