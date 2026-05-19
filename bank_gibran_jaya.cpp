@@ -82,4 +82,32 @@ public:
     }
 };
 
+int main()
+{
+    RekeningBank *rekening1 = new RekeningSyariah(5000000);
+    RekeningBank *rekening2 = new RekeningKonvensional(5000000);
+    RekeningBank *rekening3 = new RekeningPremium(12000000);
+    RekeningBank *rekening4 = new RekeningPremium(8000000);
 
+    rekening1->potongAdmin();
+    rekening1->tampilSaldo();
+    cout << endl;
+
+    rekening2->potongAdmin();
+    rekening2->tampilSaldo();
+    cout << endl;
+
+    rekening3->potongAdmin();
+    rekening3->tampilSaldo();
+    cout << endl;
+
+    rekening4->potongAdmin();
+    rekening4->tampilSaldo();
+
+    delete rekening1;
+    delete rekening2;
+    delete rekening3;
+    delete rekening4;
+
+    return 0;
+}
