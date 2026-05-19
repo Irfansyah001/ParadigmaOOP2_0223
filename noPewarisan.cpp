@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class baseClass final
+class baseClass
 {
 public:
     virtual void perkenalan()
@@ -10,7 +10,7 @@ public:
     }
 };
 
-class baseClass1
+class baseClass1 final
 {
 public:
     virtual void perkenalan()
